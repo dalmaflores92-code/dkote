@@ -39,7 +39,7 @@
             background: rgba(253, 252, 248, 0.98);
             backdrop-filter: blur(10px);
             z-index: 1000;
-            padding: 1rem 5%;
+            padding: 0.5rem 5%;
             box-shadow: 0 2px 20px rgba(122, 158, 74, 0.1);
         }
 
@@ -51,15 +51,10 @@
             align-items: center;
         }
 
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--verde-bosque);
-            text-decoration: none;
+        .logo img {
+            height: 50px;
+            width: auto;
         }
-
-        .logo i { color: var(--manzana-oscuro); }
 
         .nav-links {
             display: flex;
@@ -81,20 +76,65 @@
             cursor: pointer;
         }
 
+        /* Puntos Banner */
+        .puntos-banner {
+            background: linear-gradient(135deg, var(--terracotta) 0%, #E07B5F 100%);
+            color: white;
+            padding: 1rem 5%;
+            margin-top: 70px;
+        }
+
+        .puntos-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .puntos-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .puntos-icon {
+            font-size: 2.5rem;
+        }
+
+        .puntos-text h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .puntos-text p {
+            font-size: 0.95rem;
+            opacity: 0.95;
+        }
+
+        .btn-banner {
+            background: white;
+            color: var(--terracotta);
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
         /* Hero */
         .hero {
-            margin-top: 80px;
-            min-height: 90vh;
+            min-height: 85vh;
             background: linear-gradient(135deg, var(--manzana-claro) 0%, var(--crema-jabon) 50%, var(--beige) 100%);
             display: flex;
             align-items: center;
-            position: relative;
         }
 
         .hero-container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 0 5%;
+            padding: 3rem 5%;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
@@ -157,35 +197,6 @@
             50% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; }
         }
 
-        /* Puntos Banner */
-        .puntos-banner {
-            background: linear-gradient(135deg, var(--terracotta) 0%, #E07B5F 100%);
-            color: white;
-            padding: 1.5rem;
-            text-align: center;
-            margin-top: 80px;
-        }
-
-        .puntos-content {
-            max-width: 800px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .puntos-icon {
-            font-size: 3rem;
-            animation: bounce 2s infinite;
-        }
-
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-
         section { padding: 5rem 5%; }
 
         .section-header {
@@ -218,21 +229,16 @@
             overflow: hidden;
             box-shadow: 0 5px 20px rgba(122, 158, 74, 0.1);
             transition: all 0.3s;
-            border: 1px solid rgba(200, 217, 158, 0.3);
         }
 
         .product-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(122, 158, 74, 0.2);
         }
 
         .product-image {
             height: 280px;
             background: linear-gradient(135deg, var(--manzana-claro) 0%, var(--crema-jabon) 100%);
             overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
 
         .product-image img {
@@ -246,14 +252,9 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            height: 100%;
             color: var(--manzana-oscuro);
             font-size: 4rem;
-        }
-
-        .no-image span {
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-            color: var(--verde-hoja);
         }
 
         .product-info { padding: 1.5rem; }
@@ -263,7 +264,6 @@
             font-size: 0.85rem;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1px;
         }
 
         .product-title {
@@ -307,11 +307,6 @@
             color: white;
         }
 
-        .punto-card h3 {
-            color: var(--verde-bosque);
-            margin-bottom: 1rem;
-        }
-
         .number {
             font-size: 3rem;
             font-weight: 700;
@@ -333,96 +328,119 @@
             aspect-ratio: 1;
             border-radius: 15px;
             overflow: hidden;
-            border: 3px solid white;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         .instagram-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.3s;
         }
 
-        .instagram-item:hover img {
-            transform: scale(1.1);
-        }
-
-        /* Contact */
+        /* Contact - NUEVO DISEÑO */
         .contact {
             background: linear-gradient(135deg, var(--verde-bosque) 0%, var(--verde-hoja) 100%);
             color: white;
         }
 
         .contact-container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            text-align: center;
         }
 
-        .contact-form {
+        .contact-card {
             background: rgba(255,255,255,0.1);
-            padding: 2.5rem;
+            padding: 3rem;
             border-radius: 20px;
             backdrop-filter: blur(10px);
+            margin-top: 2rem;
         }
 
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
+        .contact-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
             color: var(--manzana-claro);
         }
 
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 1rem;
-            border: none;
-            border-radius: 10px;
+        .contact-card p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
         }
 
-        .btn-submit {
-            width: 100%;
-            padding: 1rem;
+        .btn-form {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
             background: var(--manzana-medio);
             color: var(--verde-bosque);
-            border: none;
+            padding: 1.2rem 2.5rem;
             border-radius: 50px;
-            font-size: 1.1rem;
+            text-decoration: none;
             font-weight: 700;
-            cursor: pointer;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+
+        .btn-form:hover {
+            background: var(--manzana-claro);
+            transform: translateY(-3px);
+        }
+
+        .representante {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .representante h4 {
+            color: var(--manzana-claro);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: #25D366;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: translateY(-3px);
         }
 
         footer {
             background: var(--verde-bosque);
             color: white;
-            padding: 3rem 5% 1rem;
+            padding: 2rem;
             text-align: center;
-            border-top: 5px solid var(--manzana-medio);
+            border-top: 1px solid rgba(255,255,255,0.1);
         }
 
         @media (max-width: 968px) {
             .nav-links { display: none; }
             .mobile-menu { display: block; }
-            .hero-container,
-            .contact-container { grid-template-columns: 1fr; }
-            .hero-content { text-align: center; }
-            .puntos-content { flex-direction: column; }
+            .puntos-container { flex-direction: column; text-align: center; }
+            .hero-container { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
 
+    <!-- Navigation -->
     <nav>
         <div class="nav-container">
             <a href="#" class="logo">
-                <i class="fas fa-leaf"></i> D'koté
+                <img src="images/27.png" alt="D'koté">
             </a>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
@@ -438,13 +456,15 @@
 
     <!-- Banner D'Ko-puntos -->
     <div class="puntos-banner">
-        <div class="puntos-content">
-            <div class="puntos-icon">🎁</div>
-            <div>
-                <h3>¡Conocé D'Ko-puntos!</h3>
-                <p>Por cada $100 gastados acumulás 1 punto. Canjeá desde 300 puntos.</p>
+        <div class="puntos-container">
+            <div class="puntos-left">
+                <div class="puntos-icon">🎁</div>
+                <div class="puntos-text">
+                    <h3>¡Conocé D'Ko-puntos!</h3>
+                    <p>Por cada $100 gastados acumulás 1 punto. Canjeá tus puntos por recompensas desde las 300 unidades.</p>
+                </div>
             </div>
-            <a href="#puntos" class="btn" style="background: white; color: var(--terracotta);">Ver más</a>
+            <a href="#puntos" class="btn-banner">Ver más</a>
         </div>
     </div>
 
@@ -458,7 +478,6 @@
                 <a href="#productos" class="btn btn-primary">Ver Productos</a>
             </div>
             <div class="hero-image">
-                <!-- FOTO 22: Principal -->
                 <img src="images/22.jpg" alt="Jabones D'koté">
             </div>
         </div>
@@ -472,7 +491,6 @@
         </div>
 
         <div class="products-grid">
-            <!-- Producto 1: Jabón Corporal Neutro - FOTO 15 -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="images/15.png" alt="Jabón Corporal Neutro">
@@ -484,12 +502,10 @@
                 </div>
             </div>
 
-            <!-- Producto 2: Jabón Antibacterial - SIN FOTO -->
             <div class="product-card">
                 <div class="product-image">
                     <div class="no-image">
                         <i class="fas fa-soap"></i>
-                        <span>Próximamente</span>
                     </div>
                 </div>
                 <div class="product-info">
@@ -499,7 +515,6 @@
                 </div>
             </div>
 
-            <!-- Producto 3: Jabón Exfoliante - FOTO 6 -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="images/6.png" alt="Jabón Exfoliante">
@@ -511,7 +526,6 @@
                 </div>
             </div>
 
-            <!-- Producto 4: Jabón Pédico - FOTO 8 -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="images/8.png" alt="Jabón Pédico">
@@ -523,7 +537,6 @@
                 </div>
             </div>
 
-            <!-- Producto 5: Shampoo - FOTO 2 -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="images/2.png" alt="Shampoo Sólido">
@@ -535,7 +548,6 @@
                 </div>
             </div>
 
-            <!-- Producto 6: Shampoo Mascotas - FOTO 5 -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="images/5.png" alt="Shampoo Mascotas">
@@ -547,7 +559,6 @@
                 </div>
             </div>
 
-            <!-- Producto 7: Escamas - FOTO 13 -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="images/13.png" alt="Jabón en Escamas">
@@ -559,7 +570,6 @@
                 </div>
             </div>
 
-            <!-- Producto 8: Desodorante - FOTO 19 -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="images/19.png" alt="Desodorante">
@@ -571,7 +581,6 @@
                 </div>
             </div>
 
-            <!-- Producto 9: Pasta - FOTO 10 -->
             <div class="product-card">
                 <div class="product-image">
                     <img src="images/10.png" alt="Pasta Limpiamanos">
@@ -630,28 +639,30 @@
         </div>
     </section>
 
-    <!-- Contacto -->
+    <!-- Contacto - NUEVO -->
     <section id="contacto" class="contact">
+        <div class="section-header" style="color: white;">
+            <h2 style="color: white;">¿Te interesan nuestros productos?</h2>
+            <p style="color: var(--manzana-claro);">Completá el formulario y te enviamos el catálogo con precios por mayor y menor</p>
+        </div>
+        
         <div class="contact-container">
-            <div>
-                <h2>Contactanos</h2>
-                <p style="margin-top: 1rem;"><i class="fas fa-map-marker-alt"></i> Calle 25 de Mayo 70, Paso del Rey</p>
-                <p><i class="fab fa-whatsapp"></i> +54 9 11 3575-9056</p>
-                <p><i class="fab fa-instagram"></i> @dkoteoficial_</p>
-            </div>
-            <div class="contact-form">
-                <form>
-                    <div class="form-group">
-                        <input type="text" placeholder="Tu nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Tu email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea rows="4" placeholder="Mensaje" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit">Enviar</button>
-                </form>
+            <div class="contact-card">
+                <h3><i class="fas fa-clipboard-list"></i> Solicitar Catálogo</h3>
+                <p>Si te interesan nuestros productos, llená este formulario y te mandamos el catálogo completo con precios por mayor y menor.</p>
+                <a href="https://forms.gle/YTfqAGWzynixJGBB8" target="_blank" class="btn-form">
+                    <i class="fas fa-external-link-alt"></i>
+                    Ir al formulario
+                </a>
+
+                <div class="representante">
+                    <h4><i class="fas fa-user-tie"></i> Representante Oficial AMBA</h4>
+                    <p style="font-size: 1.2rem; margin-bottom: 1rem;"><strong>Dalma Flores</strong></p>
+                    <a href="https://wa.me/541161290448" target="_blank" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        11 6129-0448
+                    </a>
+                </div>
             </div>
         </div>
     </section>
