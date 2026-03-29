@@ -1,1 +1,664 @@
-<html><head><meta content="text/html; charset=UTF-8" http-equiv="content-type"><style type="text/css">ol{margin:0;padding:0}table td,table th{padding:0}.c0{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c1{padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:left}.c3{background-color:#ffffff;max-width:451.4pt;padding:72pt 72pt 72pt 72pt}.c2{height:11pt}.title{padding-top:0pt;color:#000000;font-size:26pt;padding-bottom:3pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}.subtitle{padding-top:0pt;color:#666666;font-size:15pt;padding-bottom:16pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}li{color:#000000;font-size:11pt;font-family:"Arial"}p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}h1{padding-top:20pt;color:#000000;font-size:20pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h2{padding-top:18pt;color:#000000;font-size:16pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h3{padding-top:16pt;color:#434343;font-size:14pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h4{padding-top:14pt;color:#666666;font-size:12pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h5{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h6{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;font-style:italic;orphans:2;widows:2;text-align:left}</style></head><body class="c3 doc-content"><p class="c1"><span class="c0">&lt;!DOCTYPE html&gt;</span></p><p class="c1"><span class="c0">&lt;html lang=&quot;es&quot;&gt;</span></p><p class="c1"><span class="c0">&lt;head&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;meta charset=&quot;UTF-8&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;title&gt;D&#39;kot&eacute; - Ecojabones Vegetales&lt;/title&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;link href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css&quot; rel=&quot;stylesheet&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Lato:wght@300;400;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;style&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; :root {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --manzana-claro: #C8D99E;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --manzana-medio: #A8C66C;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --manzana-oscuro: #7A9E4A;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --verde-hoja: #4A7C2A;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --verde-bosque: #2D5016;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --crema-jabon: #F5F1E8;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --beige: #E8E0D0;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --marron-tierra: #8B6F47;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --terracota: #C65D3B;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; --blanco-natural: #FDFCF8;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; * { margin: 0; padding: 0; box-sizing: border-box; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; body {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-family: &#39;Lato&#39;, sans-serif;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-color: var(--blanco-natural);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: #4A4A4A;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; line-height: 1.6;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; h1, h2, h3, h4 { font-family: &#39;Playfair Display&#39;, serif; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; /* Navigation */</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; nav {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; position: fixed;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; top: 0;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 100%;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: rgba(253, 252, 248, 0.98);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; backdrop-filter: blur(10px);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; z-index: 1000;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 1rem 5%;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 2px 20px rgba(122, 158, 74, 0.1);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .nav-container {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max-width: 1400px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 0 auto;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: space-between;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .logo {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-family: &#39;Playfair Display&#39;, serif;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 2rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-weight: 700;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: var(--verde-bosque);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-decoration: none;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 0.5rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .nav-links {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 2rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; list-style: none;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .nav-links a {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-decoration: none;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: var(--verde-hoja);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-weight: 600;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transition: all 0.3s;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .mobile-menu {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: none;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 1.5rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cursor: pointer;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: var(--verde-bosque);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; /* Hero */</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .hero {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-top: 80px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; min-height: 90vh;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: linear-gradient(135deg, var(--manzana-claro) 0%, var(--crema-jabon) 50%, var(--beige) 100%);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .hero-container {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max-width: 1400px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 0 auto;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 0 5%;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: grid;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; grid-template-columns: 1fr 1fr;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 4rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .hero-content h1 {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 3.5rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: var(--verde-bosque);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-bottom: 1rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .hero-content .tagline {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 1.8rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: var(--manzana-oscuro);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-style: italic;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-bottom: 1.5rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .btn {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 1rem 2rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 50px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-decoration: none;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-weight: 600;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transition: all 0.3s;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: inline-flex;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 0.5rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .btn-primary {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: var(--verde-hoja);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .btn-primary:hover {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: var(--verde-bosque);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transform: translateY(-3px);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .hero-image {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 100%;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max-width: 500px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; height: 500px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; overflow: hidden;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; animation: morph 8s ease-in-out infinite;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 20px 60px rgba(122, 158, 74, 0.3);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border: 8px solid white;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .hero-image img {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 100%;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; height: 100%;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; object-fit: cover;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; @keyframes morph {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 50% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; /* Puntos Banner */</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .puntos-banner {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: linear-gradient(135deg, var(--terracotta) 0%, #E07B5F 100%);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 1.5rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .puntos-content {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max-width: 800px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 0 auto;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: center;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 2rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flex-wrap: wrap;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; /* Sections */</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; section { padding: 5rem 5%; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .section-header {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-bottom: 3rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .section-header h2 {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 2.5rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: var(--verde-bosque);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-bottom: 1rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; /* Products */</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .products {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: linear-gradient(to bottom, var(--crema-jabon) 0%, var(--blanco-natural) 100%);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .products-filter {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: center;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 1rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-bottom: 3rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flex-wrap: wrap;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .filter-btn {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 0.5rem 1.5rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border: 2px solid var(--manzana-medio);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: transparent;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: var(--verde-hoja);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 25px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cursor: pointer;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-weight: 600;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .filter-btn.active, .filter-btn:hover {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: var(--manzana-medio);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .products-grid {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max-width: 1400px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 0 auto;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: grid;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 2rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .product-card {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: white;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 20px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; overflow: hidden;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 5px 20px rgba(122, 158, 74, 0.1);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transition: all 0.3s;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .product-card:hover {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; transform: translateY(-10px);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .product-image {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; height: 280px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; overflow: hidden;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .product-image img {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 100%;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; height: 100%;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; object-fit: cover;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .product-info { padding: 1.5rem; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .product-category {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: var(--manzana-oscuro);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 0.85rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-weight: 700;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-transform: uppercase;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .product-title {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 1.3rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: var(--verde-bosque);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 0.5rem 0;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; /* Puntos Section */</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .puntos-section {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: linear-gradient(135deg, #FFF5F2 0%, #FFE8E0 100%);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .puntos-cards {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: grid;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 2rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max-width: 1000px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 3rem auto;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .punto-card {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: white;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 2rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 20px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; box-shadow: 0 10px 30px rgba(0,0,0,0.1);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .punto-icon {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 70px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; height: 70px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: var(--manzana-medio);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 50%;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; align-items: center;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; justify-content: center;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 0 auto 1rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 1.8rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .number {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 2.5rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-weight: 700;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: var(--manzana-oscuro);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; /* Instagram */</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .instagram-grid {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max-width: 1200px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 0 auto;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: grid;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 1rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .instagram-item {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; aspect-ratio: 1;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 15px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; overflow: hidden;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .instagram-item img {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 100%;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; height: 100%;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; object-fit: cover;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; /* Contact */</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .contact {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: linear-gradient(135deg, var(--verde-bosque) 0%, var(--verde-hoja) 100%);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .contact-container {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max-width: 1200px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin: 0 auto;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display: grid;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; grid-template-columns: 1fr 1fr;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gap: 4rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .contact-form {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: rgba(255,255,255,0.1);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 2rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 20px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .form-group {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; margin-bottom: 1rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .form-group input,</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .form-group textarea {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 100%;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 1rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border: none;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 10px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; .btn-submit {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 100%;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 1rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: var(--manzana-medio);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: var(--verde-bosque);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border: none;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; border-radius: 50px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-weight: 700;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cursor: pointer;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; /* Footer */</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; footer {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background: var(--verde-bosque);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 3rem 5%;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; @media (max-width: 968px) {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .nav-links { display: none; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .mobile-menu { display: block; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .hero-container,</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .contact-container { grid-template-columns: 1fr; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;/style&gt;</span></p><p class="c1"><span class="c0">&lt;/head&gt;</span></p><p class="c1"><span class="c0">&lt;body&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;nav&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;nav-container&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;#&quot; class=&quot;logo&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i class=&quot;fas fa-leaf&quot;&gt;&lt;/i&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D&#39;kot&eacute;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/a&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;ul class=&quot;nav-links&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#inicio&quot;&gt;Inicio&lt;/a&gt;&lt;/li&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#productos&quot;&gt;Productos&lt;/a&gt;&lt;/li&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#puntos&quot;&gt;D&#39;Ko-puntos&lt;/a&gt;&lt;/li&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;a href=&quot;#contacto&quot;&gt;Contacto&lt;/a&gt;&lt;/li&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/ul&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;mobile-menu&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i class=&quot;fas fa-bars&quot;&gt;&lt;/i&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;/nav&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;div class=&quot;puntos-banner&quot; style=&quot;margin-top: 80px;&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;puntos-content&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div style=&quot;font-size: 3rem;&quot;&gt;&#127873;&lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;&iexcl;Conoc&eacute; D&#39;Ko-puntos!&lt;/h3&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Por cada $100 gastados acumul&aacute;s 1 punto. Canje&aacute; desde 300 puntos.&lt;/p&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;#puntos&quot; class=&quot;btn&quot; style=&quot;background: white; color: var(--terracotta);&quot;&gt;Ver m&aacute;s&lt;/a&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;section class=&quot;hero&quot; id=&quot;inicio&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;hero-container&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;hero-content&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h1&gt;Ecojabones Vegetales&lt;/h1&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;tagline&quot;&gt;&quot;Es natural... es para vos!!&quot;&lt;/p&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Productos artesanales elaborados con margarina vegetal y aceite de coco virgen.&lt;/p&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;#productos&quot; class=&quot;btn btn-primary&quot;&gt;Ver Productos&lt;/a&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;hero-image&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- IMAGEN 1: Foto principal de jabones --&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src=&quot;imagenes/1.png&quot; alt=&quot;Jabones D&#39;kot&eacute;&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;/section&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;section id=&quot;productos&quot; class=&quot;products&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;section-header&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;Nuestros Productos&lt;/h2&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;100% naturales, sin qu&iacute;micos&lt;/p&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;products-filter&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button class=&quot;filter-btn active&quot; onclick=&quot;filterProducts(&#39;all&#39;)&quot;&gt;Todos&lt;/button&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button class=&quot;filter-btn&quot; onclick=&quot;filterProducts(&#39;personal&#39;)&quot;&gt;Personal&lt;/button&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button class=&quot;filter-btn&quot; onclick=&quot;filterProducts(&#39;cabello&#39;)&quot;&gt;Cabello&lt;/button&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button class=&quot;filter-btn&quot; onclick=&quot;filterProducts(&#39;mascotas&#39;)&quot;&gt;Mascotas&lt;/button&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;products-grid&quot; id=&quot;productsGrid&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Productos se cargan con JS --&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;/section&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;section id=&quot;puntos&quot; class=&quot;puntos-section&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;section-header&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2 style=&quot;color: var(--terracotta);&quot;&gt;D&#39;Ko-puntos&lt;/h2&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Sum&aacute; puntos con cada compra&lt;/p&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;puntos-cards&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;punto-card&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;punto-icon&quot;&gt;&lt;i class=&quot;fas fa-coins&quot;&gt;&lt;/i&gt;&lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Acumul&aacute;&lt;/h3&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;number&quot;&gt;1&lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Punto por cada $100&lt;/p&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;punto-card&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;punto-icon&quot;&gt;&lt;i class=&quot;fas fa-gift&quot;&gt;&lt;/i&gt;&lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Canje&aacute;&lt;/h3&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;number&quot;&gt;300+&lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Puntos para premios&lt;/p&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;punto-card&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;punto-icon&quot;&gt;&lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;&lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Disfrut&aacute;&lt;/h3&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;number&quot;&gt;&infin;&lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Recompensas exclusivas&lt;/p&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;/section&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;section id=&quot;instagram&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;section-header&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;Instagram&lt;/h2&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;https://instagram.com/dkoteoficial_&quot; style=&quot;color: var(--verde-hoja); font-size: 1.3rem;&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i class=&quot;fab fa-instagram&quot;&gt;&lt;/i&gt; @dkoteoficial_</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/a&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;instagram-grid&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- IMAGENES 22, 23, 24, 30 (las JPG) y algunas PNG para el feed --&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;instagram-item&quot;&gt;&lt;img src=&quot;imagenes/22.jpg&quot; alt=&quot;Instagram&quot;&gt;&lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;instagram-item&quot;&gt;&lt;img src=&quot;imagenes/23.jpg&quot; alt=&quot;Instagram&quot;&gt;&lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;instagram-item&quot;&gt;&lt;img src=&quot;imagenes/24.jpg&quot; alt=&quot;Instagram&quot;&gt;&lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;instagram-item&quot;&gt;&lt;img src=&quot;imagenes/30.jpg&quot; alt=&quot;Instagram&quot;&gt;&lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;instagram-item&quot;&gt;&lt;img src=&quot;imagenes/2.png&quot; alt=&quot;Instagram&quot;&gt;&lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;instagram-item&quot;&gt;&lt;img src=&quot;imagenes/3.png&quot; alt=&quot;Instagram&quot;&gt;&lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;/section&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;section id=&quot;contacto&quot; class=&quot;contact&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;contact-container&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2&gt;Contactanos&lt;/h2&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;i class=&quot;fas fa-map-marker-alt&quot;&gt;&lt;/i&gt; Calle 25 de Mayo 70, Paso del Rey&lt;/p&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;i class=&quot;fab fa-whatsapp&quot;&gt;&lt;/i&gt; +54 9 11 3575-9056&lt;/p&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;i class=&quot;fab fa-instagram&quot;&gt;&lt;/i&gt; @dkoteoficial_&lt;/p&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;contact-form&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;form&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;form-group&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;input type=&quot;text&quot; placeholder=&quot;Nombre&quot; required&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;form-group&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;input type=&quot;email&quot; placeholder=&quot;Email&quot; required&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;form-group&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;textarea rows=&quot;4&quot; placeholder=&quot;Mensaje&quot; required&gt;&lt;/textarea&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button type=&quot;submit&quot; class=&quot;btn-submit&quot;&gt;Enviar&lt;/button&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/form&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;/section&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;footer&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;&amp;copy; 2026 D&#39;kot&eacute; - Es natural... es para vos!!&lt;/p&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;/footer&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;script&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; // Productos con im&aacute;genes asignadas</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; const products = [</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; { name: &quot;Jab&oacute;n Corporal Neutro&quot;, category: &quot;personal&quot;, img: &quot;imagenes/2.png&quot;, desc: &quot;80% margarina vegetal, 20% aceite de coco&quot; },</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; { name: &quot;Jab&oacute;n Antibacterial&quot;, category: &quot;personal&quot;, img: &quot;imagenes/3.png&quot;, desc: &quot;Con 30% yodo povidona&quot; },</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; { name: &quot;Jab&oacute;n Exfoliante&quot;, category: &quot;personal&quot;, img: &quot;imagenes/4.png&quot;, desc: &quot;Con marmolina molida&quot; },</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; { name: &quot;Shampoo S&oacute;lido&quot;, category: &quot;cabello&quot;, img: &quot;imagenes/5.png&quot;, desc: &quot;Crecimiento y anticaspa&quot; },</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; { name: &quot;Shampoo Mascotas&quot;, category: &quot;mascotas&quot;, img: &quot;imagenes/6.png&quot;, desc: &quot;Antipulgas 100% natural&quot; },</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; { name: &quot;Jab&oacute;n en Escamas&quot;, category: &quot;personal&quot;, img: &quot;imagenes/7.png&quot;, desc: &quot;Base para artesanos&quot; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; ];</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; function renderProducts(filter = &#39;all&#39;) {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const grid = document.getElementById(&#39;productsGrid&#39;);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const filtered = filter === &#39;all&#39; ? products : products.filter(p =&gt; p.category === filter);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; grid.innerHTML = filtered.map(p =&gt; `</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;product-card&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;product-image&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img src=&quot;${p.img}&quot; alt=&quot;${p.name}&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;product-info&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;product-category&quot;&gt;${p.category}&lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3 class=&quot;product-title&quot;&gt;${p.name}&lt;/h3&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;${p.desc}&lt;/p&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `).join(&#39;&#39;);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; function filterProducts(cat) {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; document.querySelectorAll(&#39;.filter-btn&#39;).forEach(b =&gt; b.classList.remove(&#39;active&#39;));</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; event.target.classList.add(&#39;active&#39;);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; renderProducts(cat);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; renderProducts();</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;/script&gt;</span></p><p class="c1"><span class="c0">&lt;/body&gt;</span></p><p class="c1"><span class="c0">&lt;/html&gt;</span></p><p class="c1 c2"><span class="c0"></span></p></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'koté - Ecojabones Vegetales</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --manzana-claro: #C8D99E;
+            --manzana-medio: #A8C66C;
+            --manzana-oscuro: #7A9E4A;
+            --verde-hoja: #4A7C2A;
+            --verde-bosque: #2D5016;
+            --crema-jabon: #F5F1E8;
+            --beige: #E8E0D0;
+            --marron-tierra: #8B6F47;
+            --terracota: #C65D3B;
+            --blanco-natural: #FDFCF8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--blanco-natural);
+            color: #4A4A4A;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(253, 252, 248, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 5%;
+            box-shadow: 0 2px 20px rgba(122, 158, 74, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--verde-bosque);
+            text-decoration: none;
+        }
+
+        .logo i { color: var(--manzana-oscuro); }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--verde-hoja);
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            color: var(--verde-bosque);
+            cursor: pointer;
+        }
+
+        /* Hero */
+        .hero {
+            margin-top: 80px;
+            min-height: 90vh;
+            background: linear-gradient(135deg, var(--manzana-claro) 0%, var(--crema-jabon) 50%, var(--beige) 100%);
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            color: var(--verde-bosque);
+            margin-bottom: 1rem;
+        }
+
+        .hero-content .tagline {
+            font-size: 1.8rem;
+            color: var(--manzana-oscuro);
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--verde-hoja);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--verde-bosque);
+            transform: translateY(-3px);
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 500px;
+            height: 500px;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            overflow: hidden;
+            animation: morph 8s ease-in-out infinite;
+            box-shadow: 0 20px 60px rgba(122, 158, 74, 0.3);
+            border: 8px solid white;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes morph {
+            0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+            50% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; }
+        }
+
+        /* Puntos Banner */
+        .puntos-banner {
+            background: linear-gradient(135deg, var(--terracotta) 0%, #E07B5F 100%);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .puntos-content {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .puntos-icon {
+            font-size: 3rem;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        section { padding: 5rem 5%; }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--verde-bosque);
+            margin-bottom: 1rem;
+        }
+
+        /* Products */
+        .products {
+            background: linear-gradient(to bottom, var(--crema-jabon) 0%, var(--blanco-natural) 100%);
+        }
+
+        .products-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(122, 158, 74, 0.1);
+            transition: all 0.3s;
+            border: 1px solid rgba(200, 217, 158, 0.3);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(122, 158, 74, 0.2);
+        }
+
+        .product-image {
+            height: 280px;
+            background: linear-gradient(135deg, var(--manzana-claro) 0%, var(--crema-jabon) 100%);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .no-image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--manzana-oscuro);
+            font-size: 4rem;
+        }
+
+        .no-image span {
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            color: var(--verde-hoja);
+        }
+
+        .product-info { padding: 1.5rem; }
+
+        .product-category {
+            color: var(--manzana-oscuro);
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .product-title {
+            font-size: 1.3rem;
+            color: var(--verde-bosque);
+            margin: 0.5rem 0;
+        }
+
+        /* Puntos Section */
+        .puntos-section {
+            background: linear-gradient(135deg, #FFF5F2 0%, #FFE8E0 100%);
+        }
+
+        .puntos-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 3rem auto;
+        }
+
+        .punto-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--manzana-medio);
+        }
+
+        .punto-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--manzana-medio) 0%, var(--manzana-oscuro) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .punto-card h3 {
+            color: var(--verde-bosque);
+            margin-bottom: 1rem;
+        }
+
+        .number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--manzana-oscuro);
+            display: block;
+            margin: 1rem 0;
+        }
+
+        /* Instagram */
+        .instagram-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .instagram-item {
+            aspect-ratio: 1;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 3px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .instagram-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .instagram-item:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Contact */
+        .contact {
+            background: linear-gradient(135deg, var(--verde-bosque) 0%, var(--verde-hoja) 100%);
+            color: white;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-form {
+            background: rgba(255,255,255,0.1);
+            padding: 2.5rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--manzana-claro);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 1rem;
+            background: var(--manzana-medio);
+            color: var(--verde-bosque);
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        footer {
+            background: var(--verde-bosque);
+            color: white;
+            padding: 3rem 5% 1rem;
+            text-align: center;
+            border-top: 5px solid var(--manzana-medio);
+        }
+
+        @media (max-width: 968px) {
+            .nav-links { display: none; }
+            .mobile-menu { display: block; }
+            .hero-container,
+            .contact-container { grid-template-columns: 1fr; }
+            .hero-content { text-align: center; }
+            .puntos-content { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-leaf"></i> D'koté
+            </a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#puntos">D'Ko-puntos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner D'Ko-puntos -->
+    <div class="puntos-banner">
+        <div class="puntos-content">
+            <div class="puntos-icon">🎁</div>
+            <div>
+                <h3>¡Conocé D'Ko-puntos!</h3>
+                <p>Por cada $100 gastados acumulás 1 punto. Canjeá desde 300 puntos.</p>
+            </div>
+            <a href="#puntos" class="btn" style="background: white; color: var(--terracotta);">Ver más</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Ecojabones Vegetales</h1>
+                <p class="tagline">"Es natural... es para vos!!"</p>
+                <p>Productos artesanales elaborados con margarina vegetal y aceite de coco virgen. Sin químicos, apto veganos.</p>
+                <a href="#productos" class="btn btn-primary">Ver Productos</a>
+            </div>
+            <div class="hero-image">
+                <!-- FOTO 22: Principal -->
+                <img src="images/22.jpg" alt="Jabones D'koté">
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="products">
+        <div class="section-header">
+            <h2>Nuestros Productos</h2>
+            <p>100% naturales, elaborados artesanalmente</p>
+        </div>
+
+        <div class="products-grid">
+            <!-- Producto 1: Jabón Corporal Neutro - FOTO 15 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/15.png" alt="Jabón Corporal Neutro">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Cuidado Personal</div>
+                    <h3 class="product-title">Ecojabón Corporal Neutro</h3>
+                    <p>80% margarina vegetal, 20% aceite de coco. Totalmente neutro, apto veganos.</p>
+                </div>
+            </div>
+
+            <!-- Producto 2: Jabón Antibacterial - SIN FOTO -->
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="no-image">
+                        <i class="fas fa-soap"></i>
+                        <span>Próximamente</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Cuidado Personal</div>
+                    <h3 class="product-title">Ecojabón Antibacterial</h3>
+                    <p>Con 30% yodo povidona. Antiséptico, desinfectante y cicatrizante.</p>
+                </div>
+            </div>
+
+            <!-- Producto 3: Jabón Exfoliante - FOTO 6 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/6.png" alt="Jabón Exfoliante">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Cuidado Personal</div>
+                    <h3 class="product-title">Ecojabón Exfoliante</h3>
+                    <p>Con marmolina molida malla 80. Elimina impurezas de la piel.</p>
+                </div>
+            </div>
+
+            <!-- Producto 4: Jabón Pédico - FOTO 8 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/8.png" alt="Jabón Pédico">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Cuidado Personal</div>
+                    <h3 class="product-title">Ecojabón Pédico</h3>
+                    <p>Ideal como piedra pómez. Ablanda durezas en las plantas de los pies.</p>
+                </div>
+            </div>
+
+            <!-- Producto 5: Shampoo - FOTO 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/2.png" alt="Shampoo Sólido">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Cabello</div>
+                    <h3 class="product-title">Shampoo Sólido Crecimiento</h3>
+                    <p>Elimina caspa, fortalece raíces. Con romero y aloe vera.</p>
+                </div>
+            </div>
+
+            <!-- Producto 6: Shampoo Mascotas - FOTO 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/5.png" alt="Shampoo Mascotas">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Mascotas</div>
+                    <h3 class="product-title">Shampoo Antibacterial Mascotas</h3>
+                    <p>Para sarna, alergias o pulgas. Antipulgas 100% efectivo.</p>
+                </div>
+            </div>
+
+            <!-- Producto 7: Escamas - FOTO 13 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/13.png" alt="Jabón en Escamas">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Bases</div>
+                    <h3 class="product-title">Ecojabón en Escamas</h3>
+                    <p>Base para artesanos. También como detergente de cocina.</p>
+                </div>
+            </div>
+
+            <!-- Producto 8: Desodorante - FOTO 19 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/19.png" alt="Desodorante">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Cuidado Personal</div>
+                    <h3 class="product-title">Desodorante en Barra</h3>
+                    <p>24hs de protección. Línea femenina y masculina.</p>
+                </div>
+            </div>
+
+            <!-- Producto 9: Pasta - FOTO 10 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/10.png" alt="Pasta Limpiamanos">
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Hogar e Industria</div>
+                    <h3 class="product-title">Pasta Limpiamanos</h3>
+                    <p>Ideal para mecánicos. Remueve grasas y pinturas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- D'Ko-puntos -->
+    <section id="puntos" class="puntos-section">
+        <div class="section-header">
+            <h2 style="color: var(--terracotta);">D'Ko-puntos</h2>
+            <p>Sumá puntos con cada compra</p>
+        </div>
+        <div class="puntos-cards">
+            <div class="punto-card">
+                <div class="punto-icon"><i class="fas fa-coins"></i></div>
+                <h3>Acumulá</h3>
+                <span class="number">1</span>
+                <p>Punto por cada $100 gastados</p>
+            </div>
+            <div class="punto-card">
+                <div class="punto-icon"><i class="fas fa-gift"></i></div>
+                <h3>Canjeá</h3>
+                <span class="number">300+</span>
+                <p>Puntos para premios</p>
+            </div>
+            <div class="punto-card">
+                <div class="punto-icon"><i class="fas fa-star"></i></div>
+                <h3>Disfrutá</h3>
+                <span class="number">∞</span>
+                <p>Recompensas exclusivas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram -->
+    <section id="instagram">
+        <div class="section-header">
+            <h2>Instagram</h2>
+            <a href="https://instagram.com/dkoteoficial_" style="color: var(--verde-hoja); font-size: 1.3rem;">
+                <i class="fab fa-instagram"></i> @dkoteoficial_
+            </a>
+        </div>
+        <div class="instagram-grid">
+            <div class="instagram-item"><img src="images/11.png" alt="Instagram"></div>
+            <div class="instagram-item"><img src="images/22.jpg" alt="Instagram"></div>
+            <div class="instagram-item"><img src="images/23.jpg" alt="Instagram"></div>
+            <div class="instagram-item"><img src="images/25.png" alt="Instagram"></div>
+            <div class="instagram-item"><img src="images/26.png" alt="Instagram"></div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+        <div class="contact-container">
+            <div>
+                <h2>Contactanos</h2>
+                <p style="margin-top: 1rem;"><i class="fas fa-map-marker-alt"></i> Calle 25 de Mayo 70, Paso del Rey</p>
+                <p><i class="fab fa-whatsapp"></i> +54 9 11 3575-9056</p>
+                <p><i class="fab fa-instagram"></i> @dkoteoficial_</p>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="4" placeholder="Mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 D'koté | Es natural... es para vos!!</p>
+    </footer>
+
+</body>
+</html>
