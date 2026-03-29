@@ -59,6 +59,8 @@
             text-decoration: none;
         }
 
+        .logo i { color: var(--manzana-oscuro); }
+
         .nav-links {
             display: flex;
             gap: 2rem;
@@ -69,12 +71,14 @@
             text-decoration: none;
             color: var(--verde-hoja);
             font-weight: 600;
+            transition: all 0.3s;
         }
 
         .mobile-menu {
             display: none;
             font-size: 1.5rem;
             color: var(--verde-bosque);
+            cursor: pointer;
         }
 
         /* Hero */
@@ -84,6 +88,7 @@
             background: linear-gradient(135deg, var(--manzana-claro) 0%, var(--crema-jabon) 50%, var(--beige) 100%);
             display: flex;
             align-items: center;
+            position: relative;
         }
 
         .hero-container {
@@ -171,6 +176,16 @@
             flex-wrap: wrap;
         }
 
+        .puntos-icon {
+            font-size: 3rem;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
         section { padding: 5rem 5%; }
 
         .section-header {
@@ -181,34 +196,12 @@
         .section-header h2 {
             font-size: 2.5rem;
             color: var(--verde-bosque);
+            margin-bottom: 1rem;
         }
 
         /* Products */
         .products {
             background: linear-gradient(to bottom, var(--crema-jabon) 0%, var(--blanco-natural) 100%);
-        }
-
-        .products-filter {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-bottom: 3rem;
-            flex-wrap: wrap;
-        }
-
-        .filter-btn {
-            padding: 0.5rem 1.5rem;
-            border: 2px solid var(--manzana-medio);
-            background: transparent;
-            color: var(--verde-hoja);
-            border-radius: 25px;
-            cursor: pointer;
-            font-weight: 600;
-        }
-
-        .filter-btn.active, .filter-btn:hover {
-            background: var(--manzana-medio);
-            color: white;
         }
 
         .products-grid {
@@ -225,10 +218,12 @@
             overflow: hidden;
             box-shadow: 0 5px 20px rgba(122, 158, 74, 0.1);
             transition: all 0.3s;
+            border: 1px solid rgba(200, 217, 158, 0.3);
         }
 
         .product-card:hover {
             transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(122, 158, 74, 0.2);
         }
 
         .product-image {
@@ -246,28 +241,11 @@
             object-fit: cover;
         }
 
-        .product-info { padding: 1.5rem; }
-
-        .product-category {
-            color: var(--manzana-oscuro);
-            font-size: 0.85rem;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-
-        .product-title {
-            font-size: 1.3rem;
-            color: var(--verde-bosque);
-            margin: 0.5rem 0;
-        }
-
-        /* Placeholder para productos sin foto */
         .no-image {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100%;
             color: var(--manzana-oscuro);
             font-size: 4rem;
         }
@@ -275,6 +253,23 @@
         .no-image span {
             font-size: 0.9rem;
             margin-top: 0.5rem;
+            color: var(--verde-hoja);
+        }
+
+        .product-info { padding: 1.5rem; }
+
+        .product-category {
+            color: var(--manzana-oscuro);
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .product-title {
+            font-size: 1.3rem;
+            color: var(--verde-bosque);
+            margin: 0.5rem 0;
         }
 
         /* Puntos Section */
@@ -284,7 +279,7 @@
 
         .puntos-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
             max-width: 1000px;
             margin: 3rem auto;
@@ -292,29 +287,37 @@
 
         .punto-card {
             background: white;
-            padding: 2rem;
+            padding: 2.5rem;
             border-radius: 20px;
             text-align: center;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--manzana-medio);
         }
 
         .punto-icon {
-            width: 70px;
-            height: 70px;
-            background: var(--manzana-medio);
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--manzana-medio) 0%, var(--manzana-oscuro) 100%);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 1rem;
-            font-size: 1.8rem;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
             color: white;
         }
 
+        .punto-card h3 {
+            color: var(--verde-bosque);
+            margin-bottom: 1rem;
+        }
+
         .number {
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 700;
             color: var(--manzana-oscuro);
+            display: block;
+            margin: 1rem 0;
         }
 
         /* Instagram */
@@ -330,6 +333,8 @@
             aspect-ratio: 1;
             border-radius: 15px;
             overflow: hidden;
+            border: 3px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         .instagram-item img {
@@ -359,12 +364,19 @@
 
         .contact-form {
             background: rgba(255,255,255,0.1);
-            padding: 2rem;
+            padding: 2.5rem;
             border-radius: 20px;
+            backdrop-filter: blur(10px);
         }
 
         .form-group {
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--manzana-claro);
         }
 
         .form-group input,
@@ -382,6 +394,7 @@
             color: var(--verde-bosque);
             border: none;
             border-radius: 50px;
+            font-size: 1.1rem;
             font-weight: 700;
             cursor: pointer;
         }
@@ -389,14 +402,18 @@
         footer {
             background: var(--verde-bosque);
             color: white;
-            padding: 2rem;
+            padding: 3rem 5% 1rem;
             text-align: center;
+            border-top: 5px solid var(--manzana-medio);
         }
 
         @media (max-width: 968px) {
             .nav-links { display: none; }
             .mobile-menu { display: block; }
-            .hero-container, .contact-container { grid-template-columns: 1fr; }
+            .hero-container,
+            .contact-container { grid-template-columns: 1fr; }
+            .hero-content { text-align: center; }
+            .puntos-content { flex-direction: column; }
         }
     </style>
 </head>
@@ -422,7 +439,7 @@
     <!-- Banner D'Ko-puntos -->
     <div class="puntos-banner">
         <div class="puntos-content">
-            <div style="font-size: 3rem;">🎁</div>
+            <div class="puntos-icon">🎁</div>
             <div>
                 <h3>¡Conocé D'Ko-puntos!</h3>
                 <p>Por cada $100 gastados acumulás 1 punto. Canjeá desde 300 puntos.</p>
@@ -442,7 +459,7 @@
             </div>
             <div class="hero-image">
                 <!-- FOTO 22: Principal -->
-                <img src="imagenes/22.jpg" alt="Jabones D'koté">
+                <img src="images/22.jpg" alt="Jabones D'koté">
             </div>
         </div>
     </section>
@@ -458,12 +475,12 @@
             <!-- Producto 1: Jabón Corporal Neutro - FOTO 15 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="imagenes/15.png" alt="Jabón Corporal Neutro">
+                    <img src="images/15.png" alt="Jabón Corporal Neutro">
                 </div>
                 <div class="product-info">
                     <div class="product-category">Cuidado Personal</div>
                     <h3 class="product-title">Ecojabón Corporal Neutro</h3>
-                    <p>80% margarina vegetal, 20% aceite de coco. Totalmente neutro, apto veganos. Libre de perfumantes artificiales.</p>
+                    <p>80% margarina vegetal, 20% aceite de coco. Totalmente neutro, apto veganos.</p>
                 </div>
             </div>
 
@@ -472,97 +489,97 @@
                 <div class="product-image">
                     <div class="no-image">
                         <i class="fas fa-soap"></i>
-                        <span>Próximamente foto</span>
+                        <span>Próximamente</span>
                     </div>
                 </div>
                 <div class="product-info">
                     <div class="product-category">Cuidado Personal</div>
                     <h3 class="product-title">Ecojabón Antibacterial</h3>
-                    <p>Con 30% yodo povidona. Antiséptico, desinfectante, cicatrizante y antialérgico para la piel.</p>
+                    <p>Con 30% yodo povidona. Antiséptico, desinfectante y cicatrizante.</p>
                 </div>
             </div>
 
             <!-- Producto 3: Jabón Exfoliante - FOTO 6 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="imagenes/6.png" alt="Jabón Exfoliante">
+                    <img src="images/6.png" alt="Jabón Exfoliante">
                 </div>
                 <div class="product-info">
                     <div class="product-category">Cuidado Personal</div>
-                    <h3 class="product-title">Ecojabón Corporal Exfoliante</h3>
-                    <p>Con marmolina molida malla 80. Elimina impurezas de la piel del cuerpo.</p>
+                    <h3 class="product-title">Ecojabón Exfoliante</h3>
+                    <p>Con marmolina molida malla 80. Elimina impurezas de la piel.</p>
                 </div>
             </div>
 
             <!-- Producto 4: Jabón Pédico - FOTO 8 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="imagenes/8.png" alt="Jabón Pédico">
+                    <img src="images/8.png" alt="Jabón Pédico">
                 </div>
                 <div class="product-info">
                     <div class="product-category">Cuidado Personal</div>
                     <h3 class="product-title">Ecojabón Pédico</h3>
-                    <p>Ideal como piedra pómez. Ablanda durezas en las plantas de los pies. Con vinagre de manzana.</p>
+                    <p>Ideal como piedra pómez. Ablanda durezas en las plantas de los pies.</p>
                 </div>
             </div>
 
-            <!-- Producto 5: Shampoo Sólido - FOTO 2 -->
+            <!-- Producto 5: Shampoo - FOTO 2 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="imagenes/2.png" alt="Shampoo Sólido">
+                    <img src="images/2.png" alt="Shampoo Sólido">
                 </div>
                 <div class="product-info">
                     <div class="product-category">Cabello</div>
                     <h3 class="product-title">Shampoo Sólido Crecimiento</h3>
-                    <p>Elimina caspa, fortalece raíces. Con romero, aloe vera y vitaminas A, C y K. No decolora tinturas.</p>
+                    <p>Elimina caspa, fortalece raíces. Con romero y aloe vera.</p>
                 </div>
             </div>
 
             <!-- Producto 6: Shampoo Mascotas - FOTO 5 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="imagenes/5.png" alt="Shampoo Mascotas">
+                    <img src="images/5.png" alt="Shampoo Mascotas">
                 </div>
                 <div class="product-info">
                     <div class="product-category">Mascotas</div>
                     <h3 class="product-title">Shampoo Antibacterial Mascotas</h3>
-                    <p>Para sarna, alergias o pulgas. Antipulgas 100% efectivo. Cada pastilla rinde 1 litro.</p>
+                    <p>Para sarna, alergias o pulgas. Antipulgas 100% efectivo.</p>
                 </div>
             </div>
 
-            <!-- Producto 7: Jabón en Escamas - FOTO 13 -->
+            <!-- Producto 7: Escamas - FOTO 13 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="imagenes/13.png" alt="Jabón en Escamas">
+                    <img src="images/13.png" alt="Jabón en Escamas">
                 </div>
                 <div class="product-info">
                     <div class="product-category">Bases</div>
                     <h3 class="product-title">Ecojabón en Escamas</h3>
-                    <p>Base 80% margarina, 20% aceite de coco para artesanos. También como detergente de cocina.</p>
+                    <p>Base para artesanos. También como detergente de cocina.</p>
                 </div>
             </div>
 
             <!-- Producto 8: Desodorante - FOTO 19 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="imagenes/19.png" alt="Desodorante">
+                    <img src="images/19.png" alt="Desodorante">
                 </div>
                 <div class="product-info">
                     <div class="product-category">Cuidado Personal</div>
                     <h3 class="product-title">Desodorante en Barra</h3>
-                    <p>24hs de protección. Línea femenina (lavanda/rosa) y masculina (patchouli/sándalo).</p>
+                    <p>24hs de protección. Línea femenina y masculina.</p>
                 </div>
             </div>
 
-            <!-- Producto 9: Pasta Limpiamanos - FOTO 10 -->
+            <!-- Producto 9: Pasta - FOTO 10 -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="imagenes/10.png" alt="Pasta Limpiamanos">
+                    <img src="images/10.png" alt="Pasta Limpiamanos">
                 </div>
                 <div class="product-info">
                     <div class="product-category">Hogar e Industria</div>
-                    <h3 class="product-title">Pasta Limpiamanos Exfoliante</h3>
-                    <p>Ideal para mecánicos. Remueve grasas, pinturas. Hidrata y cicatriza heridas.</p>
+                    <h3 class="product-title">Pasta Limpiamanos</h3>
+                    <p>Ideal para mecánicos. Remueve grasas y pinturas.</p>
                 </div>
             </div>
         </div>
@@ -572,25 +589,25 @@
     <section id="puntos" class="puntos-section">
         <div class="section-header">
             <h2 style="color: var(--terracotta);">D'Ko-puntos</h2>
-            <p>Sumá puntos con cada compra y canjealos por recompensas</p>
+            <p>Sumá puntos con cada compra</p>
         </div>
         <div class="puntos-cards">
             <div class="punto-card">
                 <div class="punto-icon"><i class="fas fa-coins"></i></div>
                 <h3>Acumulá</h3>
-                <div class="number">1</div>
+                <span class="number">1</span>
                 <p>Punto por cada $100 gastados</p>
             </div>
             <div class="punto-card">
                 <div class="punto-icon"><i class="fas fa-gift"></i></div>
                 <h3>Canjeá</h3>
-                <div class="number">300+</div>
-                <p>Puntos para empezar a canjear</p>
+                <span class="number">300+</span>
+                <p>Puntos para premios</p>
             </div>
             <div class="punto-card">
                 <div class="punto-icon"><i class="fas fa-star"></i></div>
                 <h3>Disfrutá</h3>
-                <div class="number">∞</div>
+                <span class="number">∞</span>
                 <p>Recompensas exclusivas</p>
             </div>
         </div>
@@ -599,18 +616,17 @@
     <!-- Instagram -->
     <section id="instagram">
         <div class="section-header">
-            <h2>Seguinos en Instagram</h2>
+            <h2>Instagram</h2>
             <a href="https://instagram.com/dkoteoficial_" style="color: var(--verde-hoja); font-size: 1.3rem;">
                 <i class="fab fa-instagram"></i> @dkoteoficial_
             </a>
         </div>
         <div class="instagram-grid">
-            <!-- FOTOS: 11, 22, 23, 25, 26 -->
-            <div class="instagram-item"><img src="imagenes/11.png" alt="Instagram"></div>
-            <div class="instagram-item"><img src="imagenes/22.jpg" alt="Instagram"></div>
-            <div class="instagram-item"><img src="imagenes/23.jpg" alt="Instagram"></div>
-            <div class="instagram-item"><img src="imagenes/25.png" alt="Instagram"></div>
-            <div class="instagram-item"><img src="imagenes/26.png" alt="Instagram"></div>
+            <div class="instagram-item"><img src="images/11.png" alt="Instagram"></div>
+            <div class="instagram-item"><img src="images/22.jpg" alt="Instagram"></div>
+            <div class="instagram-item"><img src="images/23.jpg" alt="Instagram"></div>
+            <div class="instagram-item"><img src="images/25.png" alt="Instagram"></div>
+            <div class="instagram-item"><img src="images/26.png" alt="Instagram"></div>
         </div>
     </section>
 
@@ -619,10 +635,9 @@
         <div class="contact-container">
             <div>
                 <h2>Contactanos</h2>
-                <p style="margin-top: 1rem;"><i class="fas fa-map-marker-alt"></i> Calle 25 de Mayo 70, Paso del Rey, Moreno</p>
+                <p style="margin-top: 1rem;"><i class="fas fa-map-marker-alt"></i> Calle 25 de Mayo 70, Paso del Rey</p>
                 <p><i class="fab fa-whatsapp"></i> +54 9 11 3575-9056</p>
                 <p><i class="fab fa-instagram"></i> @dkoteoficial_</p>
-                <p><i class="fas fa-truck"></i> Envíos a todo el país</p>
             </div>
             <div class="contact-form">
                 <form>
@@ -633,16 +648,16 @@
                         <input type="email" placeholder="Tu email" required>
                     </div>
                     <div class="form-group">
-                        <textarea rows="4" placeholder="¿Qué productos te interesan?" required></textarea>
+                        <textarea rows="4" placeholder="Mensaje" required></textarea>
                     </div>
-                    <button type="submit" class="btn-submit">Enviar mensaje</button>
+                    <button type="submit" class="btn-submit">Enviar</button>
                 </form>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 D'koté Ecojabones Vegetales | Es natural... es para vos!!</p>
+        <p>&copy; 2026 D'koté | Es natural... es para vos!!</p>
     </footer>
 
 </body>
